@@ -43,6 +43,12 @@ body {
     overflow: auto;
     width: 100%
 }
+.container-middle {
+    margin: 20px auto;
+    overflow: auto;
+    width: 80%;
+    text-align: center;
+}
 /* End Container */
 
 /* Start Logo */
@@ -146,12 +152,12 @@ h6 {
 /* Start Main */
 .main-home-one {
     float: left;
-    width: 49,5%;
+    width: 49%;
 }
 
 .main-home-two {
-    float: rigth;
-    width: 49,5%;
+    float: right;
+    width: 49%;
 }
 
 .main-home-one .box-isi,
@@ -182,12 +188,12 @@ h6 {
     margin: 0;
     padding; 10px 0px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     color: white;
 }
 .box-heading h4 {
     font-size: 16px;
-    margin: 0;
+    margin: 5px 5px;
 }
 .box-heading h2 {
     font-size: 16px;
@@ -201,6 +207,7 @@ h6 {
     border-top: 1px;
     margin: 0;
     padding; 10px 20px;
+    font-size: 18px;
 }
 .box-isi-table {
     font-size: 16px;
@@ -208,13 +215,13 @@ h6 {
 }
 /* End Box */
 
-/* Start Kritik dan Saran */
+/* Start Pesan dan Kesan */
 .kritik-dan-saran {
     border-left: 4px solid rgb(50, 87, 99);
     margin-left: 30px;
     padding-left: 20px;
 }
-/* End Kritik dan Saran */
+/* End Pesan dan Kesan */
 
 /* Start Perpus Table */
 .perpus-table {
@@ -230,6 +237,48 @@ h6 {
     text-align: center;
 }
 /* End Perpus Table */
+
+/* Start Form */
+input[type="text"],
+input[type="email"],
+textarea {
+    font-size: 14px;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+input::placeholder,
+textarea::place {
+    color: rgb(182, 225, 228);
+    font-weight: 300;
+}
+label {
+    margin: 0 20px;
+}
+input[type="submit"],
+.button {
+    background-color: #ffffff;
+    background-image: linear-gradient(-180deg);
+    border: 1px solid rgb(10, 61, 78);
+    border-radius: 4px;
+    color: black !important;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 5px 10px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    text-align: middle;
+}
+/* End Form */
+
+/* Start Contact Form */
+.contact-form-div {
+    margin: 30px 0;
+}
+/* End Contact Form */
+
 
 /* Start Menu Sekunder */
 .menu-sekunder-one {
@@ -279,3 +328,95 @@ h6 {
     font-size: 15px;
 }
 /* End Copyright */
+
+/* Start Effect */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+.snip1552 {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.snip1552 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1552 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+  height: 200px;
+  weight: 400px;
+}
+
+.snip1552 figcaption {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+  z-index: 1;
+  bottom: 0;
+}
+
+.snip1552 h3,
+.snip1552 p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1552 h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.snip1552 p {
+  font-weight: normal;
+  font-style: italic;
+  color: #888;
+  font-size: 0.9em;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-transform: translateX(-25px);
+  transform: translateX(-25px);
+}
+
+.snip1552 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1552:hover > img,
+.snip1552.hover > img {
+  opacity: 0.1;
+}
+
+.snip1552:hover h3,
+.snip1552.hover h3,
+.snip1552:hover p,
+.snip1552.hover p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+/* End Effect */
